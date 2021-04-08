@@ -5,15 +5,15 @@ import AddInfo from './components/addInfo/AddInfo'
 import Context from './components/context/Context'
 
 function App() {
-  const [wrapperClassName, setWrapperClassName] = useState('faceClock-wrapper up');
-    const [quotesClassName, setQuotesClassName] = useState('quote-wrapper hidden');
-    const [addInfoClassName, setAddInfoClassName] = useState('add-info');
+  const [wrapperClassName, setWrapperClassName] = useState('faceClock-wrapper');
+    const [quotesClassName, setQuotesClassName] = useState('quote-wrapper');
+    const [addInfoClassName, setAddInfoClassName] = useState('add-info none');
     function handleClick(){
         const newWrapperName = wrapperClassName === 'faceClock-wrapper'? "faceClock-wrapper up":'faceClock-wrapper';
         setWrapperClassName(newWrapperName);
         const newQuotesClassName = quotesClassName === 'quote-wrapper'? "quote-wrapper hidden":'quote-wrapper';
         setQuotesClassName(newQuotesClassName);
-        const newAddInfoClassName = addInfoClassName === 'add-info'? "add-info hidden":'add-info';
+        const newAddInfoClassName = addInfoClassName === 'add-info'? "add-info none":'add-info';
         setAddInfoClassName(newAddInfoClassName);
     }
   return (

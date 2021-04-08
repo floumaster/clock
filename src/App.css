@@ -7,9 +7,10 @@
 .faceClock-wrapper{
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://img5.goodfon.com/wallpaper/nbig/8/bb/mounts-river-forest-rocks.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://img.tyt.by/n/03/f/slide_332293_3298749_free.jpg");
   background-size: cover;
   background-color:rgba(0,0,0,.9);
+  transition: height 0.2s linear;
 }
 
 .up{
@@ -24,6 +25,8 @@
   column-gap: 20px;
   height: 100px;
   margin-bottom: 130px;
+  transition: height 0.2s linear;
+  overflow: hidden;
 }
 
 .quote{
@@ -154,8 +157,16 @@
 
 
 .hidden{
+  height: 0;
+  transition: all 0.2s linear;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.none{
   display: none;
 }
+
 
 .add-info_left_description{
   font-size: 40px;

@@ -1,0 +1,170 @@
+
+.App{
+  color: #fff;
+  background-color: rgb(184, 184, 184);
+}
+
+.faceClock-wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://img5.goodfon.com/wallpaper/nbig/8/bb/mounts-river-forest-rocks.jpg");
+  background-size: cover;
+  background-color:rgba(0,0,0,.9);
+}
+
+.up{
+  height: 50vh;
+}
+
+.quote-wrapper{
+  display: flex;
+  width: 40%;
+  margin-left: 10%;
+  padding-top: 5%;
+  column-gap: 20px;
+  height: 100px;
+  margin-bottom: 130px;
+}
+
+.quote{
+  width: 60px;
+}
+
+.author{
+  font-style: normal;
+}
+
+.quote-arrows {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+
+.spin{
+  animation: spin 2s linear infinite;
+}
+
+.day-night{
+  display: flex;
+  align-content: center;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.day-night_sun{
+  width: 26px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.day-night_greeting{
+  font-size: 20px;
+}
+
+.time{
+  font-size: 180px;
+  font-weight: bold;
+}
+
+.address{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.controller{
+  width: 90px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lower-items{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  height: 300px;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+
+.controller-circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.controller-circle_arrow{
+  width: 20px;
+  height: auto;
+  transition: 300ms ease all;
+}
+
+.turned{
+  transition: 300ms ease all;
+  transform: rotate(0.5turn);
+}
+
+.controller-name{
+  width: 70%;
+  color: grey;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.add-info{
+  width: 80vw;
+  margin: auto;
+  height: 50vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: black;
+}
+
+.add-info_left, .add-info_right{
+  width: 50%;
+  height: 66%;
+}
+
+.add-info_left{
+  border-right: 1px solid grey;
+  padding-right: 80px;
+}
+
+.add-info_right{
+  padding-left: 80px;
+}
+
+
+.hidden{
+  display: none;
+}
+
+.add-info_left_description{
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.add-info_left_topic{
+  font-size: 12px;
+}
